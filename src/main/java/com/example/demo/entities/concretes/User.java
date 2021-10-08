@@ -5,6 +5,8 @@ import com.sun.istack.NotNull;
 import javax.persistence.*;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.Size;
+import java.util.List;
+import java.util.Set;
 
 @Entity
 @Table(name = "users")
@@ -19,10 +21,12 @@ public class User {
     @Email
     @Column(name = "email")
     private String email;
-
     @NotNull
     @Size(min = 4, max = 10, message = "Lütfen password en az 4 karakter en fazla 10 karakterden oluşmalıdır.")
     private String password;
+
+    @OneToMany(mappedBy = "user")
+    private List<Timeline> timelines;
 
     public User(Long userId, String userName, String email, String password) {
         this.userId = userId;
