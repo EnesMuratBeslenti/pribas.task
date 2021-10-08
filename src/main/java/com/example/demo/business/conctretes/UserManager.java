@@ -1,7 +1,7 @@
 package com.example.demo.business.conctretes;
 
 import com.example.demo.business.abstracts.UserService;
-import com.example.demo.dataAcsess.concretes.UserDao;
+import com.example.demo.data.acsess.concretes.UserDao;
 import com.example.demo.entities.concretes.User;
 import com.example.demo.entities.dtos.UserDetailDto;
 import com.example.demo.entities.dtos.UserLoginDto;
