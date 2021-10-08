@@ -1,4 +1,5 @@
-package com.example.demo.Entities.dtos;
+package com.example.demo.entities.dtos;
+
 public class UserLoginDto {
     private String email;
     private String password;

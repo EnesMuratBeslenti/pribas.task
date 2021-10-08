@@ -1,10 +1,10 @@
-package com.example.demo.Entities.dtos;
+package com.example.demo.entities.dtos;
 
 public class UserDetailDto {
- private Long userId;
- private String userName;
- private String email;
- private String password;
+    private Long userId;
+    private String userName;
+    private String email;
+    private String password;
 
 
     public UserDetailDto() {

@@ -1,8 +1,8 @@
-package com.example.demo.Utilities.result;
+package com.example.demo.result;
 
 public class ErrorDataResult<T> extends DataResult<T> {
     public ErrorDataResult(T data) {
-        super(data,false);
+        super(data, false);
     }
 
     public ErrorDataResult(T data, String message) {

@@ -1,4 +1,4 @@
-package com.example.demo.Utilities.result;
+package com.example.demo.result;
 
 public class Result {
     private boolean success;

@@ -1,6 +1,6 @@
-package com.example.demo.DataAccsess.concretes;
+package com.example.demo.dataAcsess.concretes;
 
-import com.example.demo.Entities.concretes.User;
+import com.example.demo.entities.concretes.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

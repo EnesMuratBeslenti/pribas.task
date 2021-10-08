@@ -1,6 +1,6 @@
-package com.example.demo.Utilities.result;
+package com.example.demo.result;
 
-public class SuccessResult extends  Result {
+public class SuccessResult extends Result {
 
     public SuccessResult() {
         super(true);

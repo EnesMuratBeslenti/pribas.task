@@ -1,4 +1,4 @@
-package com.example.demo.Entities.concretes;
+package com.example.demo.entities.concretes;
 
 import com.sun.istack.NotNull;
 
@@ -14,14 +14,14 @@ public class User {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long userId;
     @NotNull
-    @Size(min = 3 ,max = 20 ,message = "userName en az 3 en fazla 20 karakterden oluşmalıdır.")
+    @Size(min = 3, max = 20, message = "userName en az 3 en fazla 20 karakterden oluşmalıdır.")
     private String userName;
     @Email
     @Column(name = "email")
     private String email;
 
     @NotNull
-    @Size(min = 4,max = 10,message = "Lütfen password en az 4 karakter en fazla 10 karakterden oluşmalıdır.")
+    @Size(min = 4, max = 10, message = "Lütfen password en az 4 karakter en fazla 10 karakterden oluşmalıdır.")
     private String password;
 
     public User(Long userId, String userName, String email, String password) {
@@ -71,6 +71,7 @@ public class User {
     public void setPassword(String password) {
         this.password = password;
     }
+
     @Override
     public String toString() {
         return "User{" +
